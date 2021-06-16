@@ -1,0 +1,204 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 100%;
+}
+
+:root {
+  --lt-bg-color1: #fff;
+  --lt-bg-color2: #ffbbbb;
+  --lt-fg-color: #000000;
+  --dt-bg-color1: #2b0000;
+  --dt-bg-color2: #580000;
+  --dt-fg-color: #ff7777;
+}
+
+body {
+  margin: 0;
+  background-image: linear-gradient(135deg, var(--lt-bg-color1), var(--lt-bg-color2));
+  color: var(--lt-fg-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body a {
+  text-decoration: none;
+  color: var(--lt-fg-color);
+}
+
+body nav {
+  background-color: var(--lt-bg-color2);
+  height: 2rem;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+body nav input[type="checkbox"] {
+  position: relative;
+  top: 0.25rem;
+  width: 2rem;
+  height: 1rem;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: var(--dt-bg-color1);
+  border-radius: 20px;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+body nav input:checked[type="checkbox"] {
+  background-color: var(--lt-bg-color1);
+}
+
+body nav input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 20px;
+  border: 2px solid #afafaf;
+  background-color: #fff;
+  z-index: 3;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+body nav input:checked[type="checkbox"]:before {
+  left: calc(100% - 1rem);
+}
+
+body section {
+  height: 100vh;
+}
+
+body .card-container {
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  row-gap: 1rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+body .card-container .card {
+  background-color: #ffffff77;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 25rem;
+  -webkit-backdrop-filter: blur(0.5);
+          backdrop-filter: blur(0.5);
+  -webkit-box-shadow: 0 10px 10px 1px #00000046;
+          box-shadow: 0 10px 10px 1px #00000046;
+}
+
+body .card-container .card .social-media-link {
+  font-size: 2rem;
+}
+
+body .card-container .card .social-media-link i {
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+body .card-container .card .youtube-link:hover i {
+  color: #ff0000;
+}
+
+body .card-container .card .twitch-link:hover i {
+  color: #9900ff;
+}
+
+body .card-container .card .twitter-link:hover i {
+  color: #00b7ff;
+}
+
+body .card-container .card .instagram-link:hover i {
+  color: #ff0062;
+}
+
+body .card-container .card .facebook-link:hover i {
+  color: #0400ff;
+}
+
+body .card-container .card .tiktok-link:hover i {
+  color: #ffd900;
+}
+
+body .card-container .card .ranking-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body .card-container .card .ranking-table thead {
+  border-bottom: 2px solid;
+}
+
+body .card-container .card .ranking-table tr {
+  border-bottom: 1px solid;
+}
+
+body .card-container .card .ranking-table tr td {
+  font-weight: 300;
+}
+
+body .card-container .card .ranking-table tr th {
+  text-align: left;
+}
+
+body .card-container .card .ranking-table tr th:nth-child(2), body .card-container .card .ranking-table tr td:nth-child(2) {
+  text-align: right;
+}
+
+body .card-container .card .ranking-table tr:last-child {
+  border: none;
+}
+
+.darkmode {
+  color: var(--dt-fg-color);
+  background-image: linear-gradient(135deg, var(--dt-bg-color2), var(--dt-bg-color1));
+}
+
+.darkmode a {
+  color: var(--dt-fg-color);
+}
+
+.darkmode nav {
+  background-color: var(--dt-bg-color2);
+}
+
+.darkmode .card-container .card {
+  background-color: #00000077;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.grid50-50 {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+/*# sourceMappingURL=style.css.map */
