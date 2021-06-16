@@ -121,7 +121,17 @@ body {
       }
     }
   }
-
+  footer {
+    text-align: center;
+    background-color: var(--lt-bg-color2);
+    p {
+      margin: 0;
+      padding: 1rem;
+      a:hover {
+        color: #ff0000;
+      }
+    }
+  }
   @media only screen and (max-width: 1124px) {
     section {
       height: fit-content;
@@ -157,6 +167,9 @@ body {
     .card {
       background-color: #00000077;
     }
+  }
+  footer {
+    background-color: var(--dt-bg-color2);
   }
 }
 .display-flex {

@@ -157,6 +157,20 @@ body .card-container .card .ranking-table tr:last-child {
   border: none;
 }
 
+body footer {
+  text-align: center;
+  background-color: var(--lt-bg-color2);
+}
+
+body footer p {
+  margin: 0;
+  padding: 1rem;
+}
+
+body footer p a:hover {
+  color: #ff0000;
+}
+
 @media only screen and (max-width: 1124px) {
   body section {
     height: -webkit-fit-content;
@@ -198,6 +212,10 @@ body .card-container .card .ranking-table tr:last-child {
 
 .darkmode .card-container .card {
   background-color: #00000077;
+}
+
+.darkmode footer {
+  background-color: var(--dt-bg-color2);
 }
 
 .display-flex {
