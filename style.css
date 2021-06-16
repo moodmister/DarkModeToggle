@@ -88,7 +88,7 @@ body .card-container .card {
   background-color: #ffffff77;
   padding: 2rem;
   border-radius: 1rem;
-  width: 25rem;
+  width: 20rem;
   -webkit-backdrop-filter: blur(0.5);
           backdrop-filter: blur(0.5);
   -webkit-box-shadow: 0 10px 10px 1px #00000046;
@@ -155,6 +155,32 @@ body .card-container .card .ranking-table tr th:nth-child(2), body .card-contain
 
 body .card-container .card .ranking-table tr:last-child {
   border: none;
+}
+
+@media only screen and (max-width: 1124px) {
+  body section {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 5rem 0;
+  }
+  body .card-container {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .card-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body .card-container .card {
+    width: 100%;
+  }
 }
 
 .darkmode {
