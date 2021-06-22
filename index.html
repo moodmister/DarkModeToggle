@@ -18,7 +18,7 @@
 </head>
 <body>
   <nav class="nav">
-    <label><input type="checkbox" name="toggle-dark-mode" id="toggle-dark-mode">Toggle darkmode</label>
+    <label> <input type="checkbox" name="toggle-dark-mode" id="toggle-dark-mode">Toggle darkmode</label>
   </nav>
   <section class="banner display-flex flex-jc-c flex-ai-c">
     <div class="card-container display-grid">
@@ -269,6 +269,28 @@
         </table>
       </div>
     </div>
+  </section>
+  <section class="colors display-flex flex-jc-c flex-ai-c">
+    <form action="changeColors()" class="form-colors">
+      <div class="color-select">
+        <label>Light theme background color: <input value="#ffffff" type="color" name="lt-bg1" id="lt-bg1"></label>
+      </div>
+      <div class="color-select">
+        <label>Light theme background color: <input value="#ffffff" type="color" name="lt-bg2" id="lt-bg2"></label>
+      </div>
+      <div class="color-select">
+        <label>Light theme foreground color: <input value="#ffffff" type="color" name="lt-fg" id="lt-fg"></label>
+      </div>
+      <div class="color-select">
+        <label>Dark theme background color: <input value="#ffffff" type="color" name="dt-bg1" id="dt-bg1"></label>
+      </div>
+      <div class="color-select">
+        <label>Dark theme background color: <input value="#ffffff" type="color" name="dt-bg2" id="dt-bg2"></label>
+      </div>
+      <div class="color-select">
+        <label>Dark theme foreground color: <input value="#ffffff" type="color" name="dt-fg" id="dt-fg"></label>
+      </div>
+    </form>
   </section>
   <footer>
     <p>

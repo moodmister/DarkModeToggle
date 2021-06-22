@@ -5,7 +5,7 @@
 }
 
 :root {
-  --lt-bg-color1: #fff;
+  --lt-bg-color1: #ffffff;
   --lt-bg-color2: #ffbbbb;
   --lt-fg-color: #000000;
   --dt-bg-color1: #2b0000;
@@ -157,6 +157,24 @@ body .card-container .card .ranking-table tr:last-child {
   border: none;
 }
 
+body .colors .form-colors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  row-gap: 1rem;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+body .colors .form-colors .color-select {
+  padding: 1rem;
+  background-color: #ffffff77;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 10px 10px 1px #00000046;
+          box-shadow: 0 10px 10px 1px #00000046;
+}
+
 body footer {
   text-align: center;
   background-color: var(--lt-bg-color2);
@@ -211,6 +229,10 @@ body footer p a:hover {
 }
 
 .darkmode .card-container .card {
+  background-color: #00000077;
+}
+
+.darkmode .colors .form-colors .color-select {
   background-color: #00000077;
 }
 
