@@ -8,7 +8,7 @@
  
 ### Ideas for l8r
 
-  - [ ] Add a page to fiddle with the colors
+  - [ x ] Add a section to fiddle with the colors
   - [ ] Add interactive content
 
 ## Codepen available [here](https://codepen.io/moodmister/full/bGqzGyx)
